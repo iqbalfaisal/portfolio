@@ -1,0 +1,202 @@
+@import "../../_globalColor";
+
+.recommend-card {
+  position: relative;
+  background-color: $lightBackground2;
+  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
+  border-radius: 10px;
+  border: 1px solid $lightBorder1;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.recommend-card-dark {
+  position: relative;
+  background-color: $darkBackground;
+  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
+  border-radius: 10px;
+  border: 1px solid $lightBorder1;
+}
+
+.recommend-card:hover {
+  box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
+}
+
+.recommend-roundedimg {
+  position: absolute;
+  text-align: center;
+
+  object-fit: contain;
+  background-color: white;
+  left: 0;
+  right: 0;
+  top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 8rem;
+  height: 8rem;
+  box-shadow: 0 0.5rem 1rem $lightBoxShadowDarker;
+  border-radius: 50%;
+}
+
+.recommend-text-role {
+  text-align: center;
+  color: $textColor;
+  font-weight: 700;
+  font-size: 25px;
+  margin: 0px;
+  padding-top: 1.5rem;
+  line-height: normal;
+  margin-top: 8rem;
+}
+.dark-mode-text {
+  color: $textColorDark !important;
+}
+.recommend-text-date {
+  text-align: center;
+  color: $textColor;
+  font-size: 20px;
+  margin: 0px;
+  padding-top: 1rem;
+  font-weight: 600;
+}
+
+.recommend-text-desc {
+  text-align: center;
+}
+
+/* Media Query */
+
+@media (max-width: 1380px) {
+  .recommend-text-role {
+    padding-top: 0.5rem;
+    font-size: 22px;
+  }
+  .recommend-text-date {
+    font-size: 18px;
+  }
+  .recommend-roundedimg {
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .recommend-text-role {
+    font-size: 22px;
+  }
+  .recommend-text-date {
+    font-size: 18px;
+  }
+  .recommend-text-desc {
+    font-size: 16px;
+  }
+}
+
+.recommend-card {
+  display: block;
+  position: relative;
+  background-color: transparent;
+  border-radius: 4px;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+  height: 100%;
+}
+
+.recommend-card::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -16px;
+  right: -16px;
+  background: $buttonColor;
+  height: 42px;
+  width: 52px;
+  border-radius: 32px;
+  transform: scale(1);
+  transform-origin: 50% 50%;
+  transition: transform 0.4s ease-out;
+}
+
+.recommend-card:hover::before {
+  transform: scale(130);
+}
+
+.recommend-card:hover > .subTitle {
+  transition: all 0.3s ease-out;
+  color: $darkBoxShadow2;
+}
+
+.recommend-card:hover > h5 {
+  transition: all 0.3s ease-out;
+  color: $darkBoxShadow2;
+}
+
+@media screen and (max-width: 480px) and (min-width: 300px),
+  (min-width: 925px) and (max-width: 1024px),
+  (min-width: 1405px) and (max-width: 1550px) {
+  .recommend-card:hover::before {
+    transform: scale(30);
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 675px),
+  (min-width: 1025px) and (max-width: 1404px),
+  (min-width: 1551px) {
+  .recommend-card:hover::before {
+    transform: scale(140);
+  }
+  .recommend-card::before {
+    transition: transform 0.45s ease-out;
+  }
+}
+
+@media screen and (min-width: 675px) and (max-width: 860px) {
+  .recommend-card:hover::before {
+    transform: scale(150);
+  }
+  .recommend-card::before {
+    transition: transform 0.5s ease-out;
+  }
+}
+
+@media screen and (min-width: 860px) and (max-width: 924px) {
+  .recommend-card:hover::before {
+    transform: scale(160);
+  }
+  .recommend-card::before {
+    transition: transform 0.5s ease-out;
+  }
+}
+
+@media screen and (max-width: 480px) and (min-width: 300px) {
+  .recommend-text-role {
+    font-size: 1.125rem;
+  }
+}
+.recommend-card-shadow {
+  box-shadow: 1px 0px 20px $darkBoxShadow2;
+}
+
+.recommend-go-corner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 49px;
+  height: 42px;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  background-color: $buttonColor;
+  border-radius: 0 4px 0 32px;
+}
+
+.recommend-go-arrow {
+  margin-top: -4px;
+  margin-right: -4px;
+  color: $textColorDark;
+  font-family: courier, sans;
+}
