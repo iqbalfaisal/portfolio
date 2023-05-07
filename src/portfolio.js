@@ -10,24 +10,24 @@ import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your
 const splashScreen = {
   enabled: true, // set false to disable splash screen
   animation: splashAnimation,
-  duration: 2000 // Set animation duration as per your animation
+  duration: 2000, // Set animation duration as per your animation
 };
 
 // Summary And Greeting Section
 
 const illustration = {
-  animated: true // Set to false to use static SVG
+  animated: true, // Set to false to use static SVG
 };
 
 const greeting = {
   username: "Faisal Iqbal",
   title: "Hi all, I'm Faisal",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / TypeScript / React Js / Node Js / React Native and some other cool libraries and frameworks."
+    "As an experienced Full Stack Software Developer, I am passionate about building Web and Mobile applications using JavaScript / TypeScript / React Js / Node Js / React Native and other cutting-edge libraries and frameworks."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1e-LjeeY5Fs4_ND93xVgT07R3r-eYY4Ld/view?usp=share_link", // Set to empty to hide the button
-  displayGreeting: true // Set false to hide this section, defaults to true
+  displayGreeting: true, // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
@@ -38,7 +38,7 @@ const socialMediaLinks = {
   gmail: "7faisaliqbal@gmail.com",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
-  display: true // Set true to display this section, defaults to false
+  display: true, // Set true to display this section, defaults to false
 };
 
 // Skills Section
@@ -48,12 +48,14 @@ const skillsSection = {
   subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Utilize my expertise to develop engaging and interactive Front end / User Interfaces for your web and mobile applications"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
+      "⚡ Develop Progressive Web Applications (PWA) using both normal and SPA Stacks"
+    ),
+    emoji(
+      "⚡ Seamlessly integrate third-party services such as Firebase, AWS, and Digital Ocean into your applications."
+    ),
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -62,54 +64,54 @@ https://fontawesome.com/icons?d=gallery */
   softwareSkills: [
     {
       skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
+      fontAwesomeClassname: "fab fa-js",
     },
     {
       skillName: "React-Native",
-      fontAwesomeClassname: "fab fa-react"
+      fontAwesomeClassname: "fab fa-react",
     },
     {
       skillName: "React-Js",
-      fontAwesomeClassname: "fab fa-react"
+      fontAwesomeClassname: "fab fa-react",
     },
     {
       skillName: "Git",
-      fontAwesomeClassname: "fab fa-git"
+      fontAwesomeClassname: "fab fa-git",
     },
     {
       skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
+      fontAwesomeClassname: "fab fa-html5",
     },
     {
       skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
+      fontAwesomeClassname: "fab fa-css3-alt",
     },
     {
       skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
+      fontAwesomeClassname: "fab fa-sass",
     },
     {
       skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
+      fontAwesomeClassname: "fab fa-node",
     },
     {
       skillName: "java",
-      fontAwesomeClassname: "fab fa-java"
+      fontAwesomeClassname: "fab fa-java",
     },
     {
       skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
+      fontAwesomeClassname: "fab fa-swift",
     },
     {
       skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
+      fontAwesomeClassname: "fab fa-npm",
     },
     {
       skillName: "yarn",
-      fontAwesomeClassname: "fab fa-yarn"
-    }
+      fontAwesomeClassname: "fab fa-yarn",
+    },
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true, // Set false to hide this section, defaults to true
 };
 
 // Education Section
@@ -123,9 +125,9 @@ const educationInfo = {
       subHeader: "Bachelor of Science in Computer Science",
       duration: "September 2014 - Jun 2018",
       desc: "CGPA: 3.05 / 4.0",
-      descBullets: []
-    }
-  ]
+      descBullets: [],
+    },
+  ],
 };
 
 // Your top 3 proficient stacks/tech experience
@@ -135,18 +137,26 @@ const techStack = {
   experience: [
     {
       Stack: "JavaScript", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      progressPercentage: "90%", //Insert relative proficiency in percentage
     },
     {
       Stack: "React-Native",
-      progressPercentage: "90%"
+      progressPercentage: "90%",
     },
     {
       Stack: "React-Js",
-      progressPercentage: "80%"
-    }
+      progressPercentage: "80%",
+    },
+    {
+      Stack: "TypeScript",
+      progressPercentage: "75%",
+    },
+    {
+      Stack: "Node-Js",
+      progressPercentage: "70%",
+    },
   ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+  displayCodersrank: false, // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
 
 // Work experience section
@@ -169,8 +179,8 @@ const workExperiences = {
         "Proficient in developing CI/CD pipelines by using Bitrise and Bamboo",
         "Collaborated with product team members to implement new feature developments.",
         "Proficient in test own code using automated tests e.g. Jest, Cypress/Enzyme.",
-        "Maintain the code quality by using different tools suchas sonar-cloud, greylog, dependency-scanner, and amplitude."
-      ]
+        "Maintain the code quality by using different tools suchas sonar-cloud, greylog, dependency-scanner, and amplitude.",
+      ],
     },
     {
       role: "Mobile App Developer",
@@ -188,8 +198,8 @@ const workExperiences = {
         "Expertise in using MobX/Redux for state management.",
         "Experience in publishing applications to the PlayStoreand App Store.",
         "UI should meet the design requirements.",
-        "Hands-on experience in working with GIT"
-      ]
+        "Hands-on experience in working with GIT",
+      ],
     },
     {
       role: "Android App Developer",
@@ -202,10 +212,10 @@ const workExperiences = {
         "Integrating mobile applications to Web Services.",
         "Adding the ads of Facebook and AdMob in applications.",
         "Integration of maps,geolocation services,and social media APIs.",
-        "Cloud message APIs and push notifications"
-      ]
-    }
-  ]
+        "Cloud message APIs and push notifications",
+      ],
+    },
+  ],
 };
 
 /* Your Open Source Section to View Your Github Pinned Projects
@@ -213,7 +223,7 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: false // Set false to hide this section, defaults to true
+  display: false, // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
@@ -230,17 +240,17 @@ const bigProjects = {
       footerLink: [
         {
           name: "Visit Website",
-          url: "https://rentwithswished.com/allrentals"
+          url: "https://rentwithswished.com/allrentals",
         },
         {
           name: "Android",
-          url: "https://play.google.com/store/apps/details?id=co.uk.swished"
+          url: "https://play.google.com/store/apps/details?id=co.uk.swished",
         },
         {
           name: "iOS",
-          url: "https://apps.apple.com/gb/app/swished/id1600685718"
-        }
-      ]
+          url: "https://apps.apple.com/gb/app/swished/id1600685718",
+        },
+      ],
     },
     {
       image: require("./assets/images/gomarry.png"),
@@ -250,17 +260,17 @@ const bigProjects = {
       footerLink: [
         {
           name: "Visit Website",
-          url: "https://www.gomarry.com/"
+          url: "https://www.gomarry.com/",
         },
         {
           name: "Android",
-          url: "https://play.google.com/store/apps/details?id=com.gomarry"
+          url: "https://play.google.com/store/apps/details?id=com.gomarry",
         },
         {
           name: "iOS",
-          url: "https://apps.apple.com/app/id1489454989"
-        }
-      ]
+          url: "https://apps.apple.com/app/id1489454989",
+        },
+      ],
     },
     {
       image: require("./assets/images/picturepath.png"),
@@ -270,20 +280,20 @@ const bigProjects = {
       footerLink: [
         {
           name: "Visit Website",
-          url: "https://mypicturepath.com/"
+          url: "https://mypicturepath.com/",
         },
         {
           name: "Android",
-          url: "https://play.google.com/store/apps/details?id=com.acorn.picapp&hl=en_GB"
+          url: "https://play.google.com/store/apps/details?id=com.acorn.picapp&hl=en_GB",
         },
         {
           name: "iOS",
-          url: "https://apps.apple.com/gb/app/picturepath/id1339643269"
-        }
-      ]
-    }
+          url: "https://apps.apple.com/gb/app/picturepath/id1339643269",
+        },
+      ],
+    },
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true, // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
@@ -304,17 +314,17 @@ const achievementSection = {
       footerLink: [
         {
           name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing",
         },
         {
           name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
+          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing",
         },
         {
           name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
-      ]
+          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html",
+        },
+      ],
     },
     {
       title: "Google Assistant Action",
@@ -325,9 +335,9 @@ const achievementSection = {
       footerLink: [
         {
           name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
+          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en",
+        },
+      ],
     },
 
     {
@@ -336,15 +346,15 @@ const achievementSection = {
       image: require("./assets/images/pwaLogo.webp"),
       imageAlt: "PWA Logo",
       footerLink: [
-        {name: "Certification", url: ""},
+        { name: "Certification", url: "" },
         {
           name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
-      ]
-    }
+          url: "https://pakistan-olx-1.firebaseapp.com/",
+        },
+      ],
+    },
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: false, // Set false to hide this section, defaults to true
 };
 
 // Recommendations Section
@@ -358,31 +368,31 @@ const recommendationSection = {
       image: require("./assets/images/simone.jpeg"),
       name: "Simone Terranova",
       role: "Digital Product Designer",
-      text: `"With Faisal, we worked together on project called Picturepath. Among his many strengths are a great working attitude and a remarkable sense of problem-solving. His knowledge of programming and teamwork gave the project a solid foundation. He is a real asset to any team."`
+      text: `"With Faisal, we worked together on project called Picturepath. Among his many strengths are a great working attitude and a remarkable sense of problem-solving. His knowledge of programming and teamwork gave the project a solid foundation. He is a real asset to any team."`,
     },
     {
       url: "https://www.linkedin.com/in/thefaisaliqbal/details/recommendations/",
       image: require("./assets/images/clare.jpeg"),
       name: "Clare Curran",
       role: "Freelance Senior Digital Designer",
-      text: `"Faisal’s strong skillset and work ethic make him an excellent software engineer and a pleasure to work with. He has a collaborative attitude to problem solving and is always open to other peoples opinions. He is an asset to any team and I hope we get to work together again in the future."`
+      text: `"Faisal’s strong skillset and work ethic make him an excellent software engineer and a pleasure to work with. He has a collaborative attitude to problem solving and is always open to other peoples opinions. He is an asset to any team and I hope we get to work together again in the future."`,
     },
     {
       url: "https://www.linkedin.com/in/thefaisaliqbal/details/recommendations/",
       image: require("./assets/images/mark.jpeg"),
       name: "Mark Lally",
       role: "Head of Product Management",
-      text: `"Faisal is a fantastic software engineer. Great experience in mobile development which is only surpassed by his ability to pick up new libraries, code bases and technologies. Importantly for me, Faisal is excellent at identifying problems and solving them. Always willing to discuss and review his builds prior to deployment he is an asset to any team. I look forward to our paths passing again in the future."`
+      text: `"Faisal is a fantastic software engineer. Great experience in mobile development which is only surpassed by his ability to pick up new libraries, code bases and technologies. Importantly for me, Faisal is excellent at identifying problems and solving them. Always willing to discuss and review his builds prior to deployment he is an asset to any team. I look forward to our paths passing again in the future."`,
     },
     {
       url: "https://www.linkedin.com/in/thefaisaliqbal/details/recommendations/",
       image: require("./assets/images/eleanor.jpeg"),
       name: "Eleanor Wheadon",
       role: "Product Owner",
-      text: `"Throughout the time I worked with Faisal, he was always very focused and hard working when given tasks and stories to complete within our sprints. Faisal’s skills in native app development really helped us out as a team whenever we required them. Faisal always got involved in detailed discussions about our requirements and would raise valuable questions and points often to allow us to achieve our sprint goals to the best of our ability. Thanks for your efforts and good luck with your future :)"`
-    }
+      text: `"Throughout the time I worked with Faisal, he was always very focused and hard working when given tasks and stories to complete within our sprints. Faisal’s skills in native app development really helped us out as a team whenever we required them. Faisal always got involved in detailed discussions about our requirements and would raise valuable questions and points often to allow us to achieve our sprint goals to the best of our ability. Thanks for your efforts and good luck with your future :)"`,
+    },
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true, // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -397,16 +407,16 @@ const blogSection = {
       url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
       title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
       description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
+        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?",
     },
     {
       url: "",
       title: "Why REACT is The Best?",
       description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
-    }
+        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies.",
+    },
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: false, // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -422,10 +432,10 @@ const talkSection = {
       title: "Build Actions For Google Assistant",
       subtitle: "Codelab at GDG DevFest Karachi 2019",
       slides_url: "",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
-    }
+      event_url: "https://www.facebook.com/events/2339906106275053/",
+    },
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: false, // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -436,22 +446,22 @@ const podcastSection = {
 
   // Please Provide with Your Podcast embeded Link
   podcast: [""],
-  display: false // Set false to hide this section, defaults to true
+  display: false, // Set false to hide this section, defaults to true
 };
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
+    "Whether you want to discuss a project or simply say hello, feel free to reach out to me anytime. My inbox is always open.",
   number: "+92-334-8611905",
-  email_address: "7faisaliqbal@gmail.com"
+  email_address: "7faisaliqbal@gmail.com",
 };
 
 // Twitter Section
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: false // Set true to display this section, defaults to false
+  display: false, // Set true to display this section, defaults to false
 };
 
 const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
@@ -474,5 +484,5 @@ export {
   contactInfo,
   twitterDetails,
   isHireable,
-  recommendationSection
+  recommendationSection,
 };
