@@ -165,6 +165,20 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
+      role: "Senior Dev Engineer",
+      company: "Mashreq",
+      companylogo: require("./assets/images/mashreq.jpeg"),
+      date: "Dec 2022 – Sept 2023",
+      desc: "https://www.mashreq.com/",
+      descBullets: [
+        "Led a dynamic team at various stages, providing technical guidance and ensuring project milestones were met.",
+        "Spearheaded the development of proof-of-concept (POC) projects, demonstrating innovation and feasibility of new ideas.",
+        "Collaborated with cross-functional teams to deliver high-quality software solutions within specified timelines.",
+        "Utilized Azure cloud services for deployment, scaling, and management of applications.",
+        "Worked with Microsoft Portal (MS Portal) for various aspects of project management and resource provisioning.",
+      ],
+    },
+    {
       role: "Sr. Frontend Developer",
       company: "We Are Nova",
       companylogo: require("./assets/images/wearenova.png"),
@@ -453,7 +467,7 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Whether you want to discuss a project or simply say hello, feel free to reach out to me anytime. My inbox is always open.",
-  number: "+92-334-8611905",
+  number: "+40-724-425267",
   email_address: "7faisaliqbal@gmail.com",
 };
 
