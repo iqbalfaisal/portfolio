@@ -23,10 +23,9 @@ const greeting = {
   username: "Faisal Iqbal",
   title: "Hi all, I'm Faisal",
   subTitle: emoji(
-    "As an experienced Full Stack Software Developer, I am passionate about building Web and Mobile applications using JavaScript / TypeScript / React Js / Node Js / React Native and other cutting-edge libraries and frameworks."
+    "I’m a Frontend Developer who thrives on building sleek, high-performance web and mobile apps with JavaScript, TypeScript, React.js, Vue.js, React Native, and modern tech stacks that bring ideas to life"
   ),
-  resumeLink:
-    "https://drive.google.com/file/d/1hPaeHKuoZTPOfdbRDcKW8OtwY5vn9Gta/view?usp=share_link", // Set to empty to hide the button
+  resumeLink: "", // Set to empty to hide the button
   displayGreeting: true, // Set false to hide this section, defaults to true
 };
 
@@ -45,16 +44,17 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle:
+    "Creative Frontend Developer Crafting Beautiful, Fast & User-Friendly Experiences",
   skills: [
     emoji(
-      "⚡ Utilize my expertise to develop engaging and interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Design and build sleek, responsive, and interactive user interfaces for web and mobile apps using cutting-edge frontend technologies"
     ),
     emoji(
-      "⚡ Develop Progressive Web Applications (PWA) using both normal and SPA Stacks"
+      "⚡ Create lightning-fast Progressive Web Apps (PWAs) and Single Page Applications (SPAs) for seamless, app-like user experiences"
     ),
     emoji(
-      "⚡ Seamlessly integrate third-party services such as Firebase, AWS, and Digital Ocean into your applications."
+      "⚡ Integrate powerful third-party services like Firebase, AWS, and DigitalOcean to supercharge applications with real-time features and scalability"
     ),
   ],
 
@@ -73,6 +73,10 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "React-Js",
       fontAwesomeClassname: "fab fa-react",
+    },
+    {
+      skillName: "Vue-Js",
+      fontAwesomeClassname: "fab fa-vuejs",
     },
     {
       skillName: "Git",
@@ -148,8 +152,12 @@ const techStack = {
       progressPercentage: "80%",
     },
     {
-      Stack: "TypeScript",
+      Stack: "Vue-Js",
       progressPercentage: "75%",
+    },
+    {
+      Stack: "TypeScript",
+      progressPercentage: "80%",
     },
     {
       Stack: "Node-Js",
@@ -164,6 +172,19 @@ const techStack = {
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
+    {
+      role: "Sr. Consultant Developer",
+      company: "Thoughtworks",
+      companylogo: require("./assets/images/tw.png"),
+      date: "Aug 2023 – Present",
+      desc: "https://www.thoughtworks.com/",
+      descBullets: [
+        "Contributed to various client projects while embodying the company's values of transparency, collaboration, and social justice",
+        "Collaborated closely with clients to understand their business requirements and user needs, facilitating workshops and user testing sessions to gather feedback and iterate on mobile app designs, resulting in high client satisfaction.",
+        "Provided technical leadership within project teams, guiding junior developers in best practices for mobile app development, conducting code reviews, and making architectural decisions to ensure scalability and maintainability.",
+        "Encountered a performance bottleneck in a mobile application and implemented a caching mechanism that reduced load times by 30%, showcasing problem-solving skills and a proactive approach to optimising app performance.",
+      ],
+    },
     {
       role: "Senior Dev Engineer",
       company: "Mashreq",
@@ -248,13 +269,53 @@ const bigProjects = {
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
+      image: require("./assets/images/mb.png"),
+      projectName: "MB.OS Portal",
+      projectDesc:
+        "Main user interface platform for the Mercedes-Benz ecosystem",
+      footerLink: [
+        {
+          name: "Website",
+          url: "http://portal.mbos.mercedes-benz.com/",
+        },
+      ],
+    },
+    {
+      image: require("./assets/images/bmmro.png"),
+      projectName: "BMMRO",
+      projectDesc:
+        "To promote conservation ot marine mammals and their habitats through scientific research and educational outreach",
+      footerLink: [
+        {
+          name: "Website",
+          url: "http://www.bahamaswhales.org/",
+        },
+      ],
+    },
+    {
+      image: require("./assets/images/primer.jpg"),
+      projectName: "Primer",
+      projectDesc:
+        "Unleash your payments potential. Shape extraordinary commerce experiences, process every payment with precision, and accelerate business growth without compromise.",
+      footerLink: [
+        {
+          name: "Website",
+          url: "https://primer.io/",
+        },
+        {
+          name: "primer-sdk-react-native",
+          url: "https://github.com/primer-io/primer-sdk-react-native?tab=readme-ov-file",
+        },
+      ],
+    },
+    {
       image: require("./assets/images/swished.png"),
       projectName: "Swished | Rent & Lend Fashion",
       projectDesc:
-        "Rent outfits ✨ More fashion, more often, less cost to your purse & planet. List your wardrobe to make money search for SWISHED.",
+        "Rent outfits More fashion, more often, less cost to your purse & planet. List your wardrobe to make money search for SWISHED.",
       footerLink: [
         {
-          name: "Visit Website",
+          name: "Website",
           url: "https://rentwithswished.com/allrentals",
         },
         {
@@ -274,7 +335,7 @@ const bigProjects = {
         "Proven Alternative To Dating Apps. Not About Cheap Swipes, One Night Stands Or Hookups. Only For People Who Want Commitment & Long-term Relationships. I.e. Marriage & Family.",
       footerLink: [
         {
-          name: "Visit Website",
+          name: "Website",
           url: "https://www.gomarry.com/",
         },
         {
@@ -294,7 +355,7 @@ const bigProjects = {
       Picturepath supports those with additional support needs, such as autism, to thrive at home, in education and through all of life’s experiences.`,
       footerLink: [
         {
-          name: "Visit Website",
+          name: "Website",
           url: "https://mypicturepath.com/",
         },
         {
